@@ -1,0 +1,9 @@
+.Card{
+    height: fit-content;
+    width: fit-content;
+    border: 1px solid white;
+    margin: 1rem;
+    display:inline-table ;
+    background-color: #ab75a5c9;
+    
+}
