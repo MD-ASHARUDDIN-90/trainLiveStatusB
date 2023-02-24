@@ -4,6 +4,7 @@ import Home from './Pages/Home/Home'
 import AboutUs from "./Pages/AboutUs/AboutUs"
 import ContactUs from "./Pages/ContactUs/ContactUs"
 import Card from './Component/Card/Card'
+import TrainLivePage from './Pages/TrainLivePage/TrainLivePage'
 
 export default function App() {
   const [fetchData , setFetchData] = useState([])
@@ -15,6 +16,7 @@ export default function App() {
       <Route path='/AboutUs'element={<AboutUs />}></Route>
       <Route path='/ContactUs'element={<ContactUs  />}></Route>
       <Route path='/Card'element={<Card fetchData={fetchData}/>}></Route>
+      <Route path='/TrainLivePage' element={<TrainLivePage/>}></Route>
      </Routes>
      </BrowserRouter> 
     </div>

@@ -1,13 +1,23 @@
 import React, { useState, useEffect } from "react";
 import style from "./Card.module.css";
-import { useRecoilValue } from "recoil";
+import { useRecoilState } from "recoil";
 import { Traindata } from "../../Atom/Atom";
 import Navbar from "../Navbar/Navbar";
+import { traindata } from "../../Atom/Atom";
+import { useNavigate } from "react-router-dom";
 
-function Card({ fetchData }) {
+function Card({ fetchData}) {
+const navigate=useNavigate()
+
+const [data,setData] = useRecoilState(traindata)
+console.log(data,"...🤣🤣🤣🤣🤣")
+
+
 
 function handleLiveStatus(item){
+navigate("/TrainLivePage")
   console.log(item,"clcik item")
+
   const options = {
     method: 'GET',
     headers: {
@@ -18,8 +28,9 @@ function handleLiveStatus(item){
   
   fetch(`https://indian-railway-irctc.p.rapidapi.com/getTrainLiveStatusById?id=${item.id}&date=Mon%2C%2031st%20Dec`, options)
     .then(response => response.json())
-    .then(response => console.log(response,"live status of train which click"))
+    .then(response => setData(response.stations))
     .catch(err => console.error(err));
+
 }
 
   return (
