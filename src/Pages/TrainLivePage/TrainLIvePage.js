@@ -7,9 +7,13 @@ import Image from "./Track.png"
 function TrainLivePage() {
 const [data,setData] = useRecoilState(traindata)
 console.log(data,"bipullllll")
+
+
+
+
   return (
     <div className={style.main}>
-      {/* <img className={style.img} src={Image} /> */}
+  
       <div className={style.box}>
       {data.map((item)=>
       <>
