@@ -8,12 +8,20 @@ function TrainLivePage() {
 const [data,setData] = useRecoilState(traindata)
 console.log(data,"bipullllll")
 
+const date = new Date();
+const hour=date.getHours()
+const min = date.getMinutes()
+const sec= date.getSeconds()
+
+
+console.log(hour,min,sec)
+
 
 
 
   return (
     <div className={style.main}>
-  
+     
       <div className={style.box}>
       {data.map((item)=>
       <>
