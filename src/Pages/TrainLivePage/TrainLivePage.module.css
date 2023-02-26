@@ -9,7 +9,7 @@
 .img{
     rotate: 90deg;
     height: 13rem;
-    z-index: 1000;
+    z-index: 100;
     position: absolute;
     margin-left: 8rem;
 }
@@ -38,4 +38,11 @@ align-items: center;
 background: linear-gradient(135deg, rgb(223, 75, 30) 31%, rgba(19,175,165,1) 61%);
  /* padding-top: 3rem; */
 
+}
+.logo{
+    position: absolute;
+    margin-left: 19.6rem;
+    z-index: 900;
+    margin-top: 1rem;
+    font-size: large;
 }

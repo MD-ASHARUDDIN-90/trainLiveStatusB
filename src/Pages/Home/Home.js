@@ -5,6 +5,7 @@ import { traindata } from "../../Atom/Atom";
 import { useSetRecoilState } from "recoil";
 import { Traindata } from "../../Atom/Atom";
 import Navbar from "../../Component/Navbar/Navbar";
+import Footer from "../../Atom/Footer/Footer";
 
 function Home({setFetchData}) {
   const navigate = useNavigate();
@@ -64,6 +65,7 @@ function Home({setFetchData}) {
           }
           
         </div>
+        <Footer />
       </div>
     </>
   );

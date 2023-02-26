@@ -6,6 +6,7 @@ import Navbar from "../Navbar/Navbar";
 import { traindata } from "../../Atom/Atom";
 import { useNavigate } from "react-router-dom";
 
+
 function Card({ fetchData}) {
 const navigate=useNavigate()
 

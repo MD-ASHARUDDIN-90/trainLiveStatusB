@@ -3,6 +3,7 @@ import { traindata } from '../../Atom/Atom'
 import { useRecoilState } from 'recoil'
 import style from "./TrainLivePage.module.css"
 import Image from "./Track.png"
+import { FaTrain } from 'react-icons/fa';
 
 function TrainLivePage() {
 const [data,setData] = useRecoilState(traindata)
@@ -29,7 +30,8 @@ console.log(hour,min,sec)
       
       <div className={style.TrainBox}>
       <img className={style.img} src={Image} />
-        <h3 style={{color : item.actual_departure_time.split("").slice(0,2).join("") == hour  ? "red" : "blue" } }>{item.source_name}</h3>
+        <span className={style.logo}  style={{color : item.actual_departure_time.split("").slice(0,2).join("") == hour   ? "red" : "blue" } }><FaTrain/></span>
+        <h3>{item.source_name}</h3>
         <h5>Arival time:{item.actual_arrival_time}</h5>
         <h5>Departure time:{item.actual_departure_time}</h5>
         </div>
