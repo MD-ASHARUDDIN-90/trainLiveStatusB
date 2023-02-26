@@ -4,7 +4,7 @@ import Home from './Pages/Home/Home'
 import AboutUs from "./Pages/AboutUs/AboutUs"
 import ContactUs from "./Pages/ContactUs/ContactUs"
 import Card from './Component/Card/Card'
-import TrainLivePage from './Pages/TrainLivePage/TrainLivePage'
+import TrainLivePage from './Pages/TrainLivePage/TrainLIvePage'
 
 export default function App() {
   const [fetchData , setFetchData] = useState([])
