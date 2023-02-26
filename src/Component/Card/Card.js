@@ -43,6 +43,7 @@ navigate("/TrainLivePage")
           <>
             <div className={style.Card}>
               <div>
+              {console.log(item.display,'hiiiiiii')}
                 <h3>Train No : {item.display.split(" ").slice(0,1).join(" ")}</h3>
                 <h5>Destination Code : {item.destination_code}</h5>
                 <h5> Destination Name : {item.destination_name}</h5>

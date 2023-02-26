@@ -17,9 +17,7 @@ const sec= date.getSeconds()
 console.log(hour,min,sec)
 
 
-// useEffect(()=>{
-//   // data.map()
-// },[])
+
 
   return (
     <div className={style.main}>
